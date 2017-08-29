@@ -2,8 +2,7 @@
 
 module Config where
 
-import Data.Aeson ((.:), (.:?), decode, FromJSON(..), Value(..))
-import Control.Applicative
+import Data.Aeson ((.:?), decode, FromJSON(..), Value(..))
 import qualified Data.ByteString.Lazy.Char8 as B
 
 data Config = Config {

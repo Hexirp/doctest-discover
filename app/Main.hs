@@ -1,9 +1,6 @@
 module Main where
 
-import System.Environment
-import Control.Applicative 
-import Control.Monad
-import Data.Maybe (fromMaybe)
+import System.Environment 
 import Runner (driver)
 import Config (config, Config(..))
 import System.Directory
@@ -11,7 +8,7 @@ import System.FilePath
 
 main :: IO ()
 main = do
-    (src : _ : dst : args) <- getArgs
+    (_ : _ : dst : args) <- getArgs
     let configFileContents = case args of
                               (configFile : _) -> readFile configFile
                               _ -> return ""

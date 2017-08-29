@@ -4,7 +4,6 @@ module Runner (
 
 import Data.List
 import Config
-import System.FilePath.Posix
 
 -- | Generates doctest driver
 --
