@@ -24,7 +24,7 @@ library
                      , aeson
                      , bytestring
   ghc-options:         -W
-  exposed-modules:     Config, Main, Runner
+  exposed-modules:     Config, Runner
   HS-Source-Dirs:      src
 
 executable doctest-discover
@@ -36,9 +36,8 @@ executable doctest-discover
                      , aeson
                      , bytestring
   ghc-options:         -W -threaded -rtsopts -with-rtsopts=-N
-  other-modules:       Runner, Config
   main-is:             Main.hs
-  HS-Source-Dirs:      src
+  HS-Source-Dirs:      app
 
 test-suite doctests
   default-language:    Haskell2010
