@@ -4,8 +4,8 @@ import System.Environment
 import Control.Applicative 
 import Control.Monad
 import Data.Maybe (fromMaybe)
-import Runner
-import Config
+import Runner (driver)
+import Config (config, Config(..))
 import System.Directory
 import System.FilePath
 
@@ -25,10 +25,3 @@ main = do
 
 getAbsDirectoryContents :: FilePath -> IO [FilePath]
 getAbsDirectoryContents dir = getDirectoryContents dir >>= mapM (canonicalizePath . (dir </>))
-
-
-
-
-
-
-
