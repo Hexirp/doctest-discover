@@ -35,6 +35,7 @@ executable doctest-discover
                      , filepath
                      , aeson
                      , bytestring
+                     , doctest-discover
   ghc-options:         -W -threaded -rtsopts -with-rtsopts=-N
   main-is:             Main.hs
   HS-Source-Dirs:      app
